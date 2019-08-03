@@ -1,0 +1,155 @@
+.rules_header img{
+height: 100px;
+width: 100px;
+}
+
+.rules_header{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+.rules_header h1{
+	padding-right: 50%;
+}
+.rules{
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif; 
+	list-style-position: inside;
+}
+.submit_button{
+	text-align: center;
+margin-top: 10%;
+}
+.button{
+	
+ 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+ 
+  cursor: pointer;
+}
+
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #4CAF50;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.check{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40% 0 40%;
+}
+
+
+
+
+h2{
+	color: #808080;
+}
+li{
+	margin: 10px 0;
+}
+.only_rules{
+	
+	margin: 0 20% 0 20%;
+	border: 1px solid #D3D3D3;
+	border-radius: 20px;
+}
+.check{
+	margin: 10px 0;
+}
+
+
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 180px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #4CAF50;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #4CAF50;
+  box-shadow: 0px 15px 20px rgba(76, 175, 80, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
